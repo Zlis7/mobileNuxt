@@ -15,6 +15,8 @@ export default defineConfig({
       brandBlue: '#002AFF',
       brandGreen: '#00FF12',
       brandPurple: '#E200FF',
+      brandGray: '#C4C4C4',
+
     },
   },
 })
