@@ -7,8 +7,14 @@ export default defineConfig({
       brand: {
         primary: '#16213E',
         DEFAULT: '#1A1A2E',
+        special: '#8B5CF6',
       },
-      brandHover: '#8B5CF6',
+      brandRed: '#FF0000',
+      brandWhite: '#EFEFEF',
+      brandYellow: '#FAFF00',
+      brandBlue: '#002AFF',
+      brandGreen: '#00FF12',
+      brandPurple: '#E200FF',
     },
   },
 })
