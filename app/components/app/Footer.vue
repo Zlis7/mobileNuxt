@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
-const isActive = (path: string) => path === route.path
-let forRerender = ref(0)
+const isActive = (paths: string[]) => paths.includes(route.path)
 </script>
 
 <template>
@@ -9,42 +8,41 @@ let forRerender = ref(0)
     <nav flex justify-center gap-5 items-center>
       <FooterButton
         :src-img="
-          isActive('/shop')
+          isActive(['/shop', '/basket'])
             ? '/img/footer/moneybag-special.svg'
             : '/img/footer/moneybag.svg'
         "
-        title-button="Магазин"
-        @sumbit="
-          () => {
-            forRerender.value = 1
-          }
+        :color-title="
+          isActive(['/shop', '/basket'])
+            ? 'text-brand-special'
+            : 'text-brandWhite'
         "
+        title-button="Магазин"
+        link="/shop"
       />
       <FooterButton
         :src-img="
-          isActive('/map')
+          isActive(['/map'])
             ? '/img/footer/globe-special.svg'
             : '/img/footer/globe.svg'
         "
-        title-button="Карта мира"
-        @sumbit="
-          () => {
-            forRerender = 1
-          }
+        :color-title="
+          isActive(['/map']) ? 'text-brand-special' : 'text-brandWhite'
         "
+        title-button="Карта мира"
+        link="/map"
       />
       <FooterButton
         :src-img="
-          isActive('/acc')
+          isActive(['/acc'])
             ? '/img/footer/user-special.svg'
             : '/img/footer/user.svg'
         "
-        title-button="Аккаунт"
-        @sumbit="
-          () => {
-            forRerender = 1
-          }
+        :color-title="
+          isActive(['/acc']) ? 'text-brand-special' : 'text-brandWhite'
         "
+        title-button="Аккаунт"
+        link="/acc"
       />
     </nav>
   </footer>

@@ -2,11 +2,12 @@
 const props = defineProps({
   srcImg: String,
   titleButton: String,
+  link: String,
 })
 </script>
 
 <template>
-  <button
+  <NuxtLink
     bg-brand-primary
     flex
     items-center
@@ -17,8 +18,9 @@ const props = defineProps({
     justify-end
     rounded-full
     gap-3
+    :to="props.link"
   >
     <p>{{ props.titleButton }}</p>
     <NuxtImg w-6 h-6 :src="props.srcImg" />
-  </button>
+  </NuxtLink>
 </template>

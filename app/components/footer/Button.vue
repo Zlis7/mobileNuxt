@@ -1,22 +1,14 @@
 <script setup lang="ts">
 const props = defineProps({
   srcImg: String,
+  colorTitle: String,
   titleButton: String,
-})
-
-const emit = defineEmits(['sumbit'])
-
-function clickEvent() {
-  emit('sumbit')
-}
-
-onUpdated(() => {
-  console.warn('reload')
+  link: String,
 })
 </script>
 
 <template>
-  <button
+  <NuxtLink
     flex
     flex-col
     items-center
@@ -24,9 +16,11 @@ onUpdated(() => {
     h-23
     w-30
     justify-center
-    @click="clickEvent"
+    :to="props.link"
   >
     <NuxtImg w-6 h-6 :src="props.srcImg" />
-    <p>{{ props.titleButton }}</p>
-  </button>
+    <p :class="props.colorTitle">
+      {{ props.titleButton }}
+    </p>
+  </NuxtLink>
 </template>
