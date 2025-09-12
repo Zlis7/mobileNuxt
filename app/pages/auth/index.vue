@@ -40,12 +40,12 @@ function submit() {
     </div>
 
     <div flex justify-center gap-2>
-      <NuxtImg w-6 h-6 src="/img/main/loader.svg" />
+      <NuxtImg w-6 h-6 src="/main/loader.svg" />
       <button type="submit">Войти через Github</button>
     </div>
 
     <div flex justify-center gap-2>
-      <NuxtImg w-6 h-6 src="/img/main/loader.svg" />
+      <NuxtImg w-6 h-6 src="/main/loader.svg" />
       <button type="submit">Войти через Google</button>
     </div>
 

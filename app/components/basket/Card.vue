@@ -19,13 +19,13 @@ const props = defineProps({
   >
     <div pl-3 flex flex-col gap-2>
       <div flex gap-2 items-center h-10>
-        <NuxtImg w-7 h-7 src="/img/main/badge-dollar.svg" />
+        <NuxtImg w-7 h-7 src="/main/badge-dollar.svg" />
         <p text-5>{{ props.price }}</p>
       </div>
       <p overflow-hidden text-ellipsis h-10 text-3>
         {{ props.title }}
       </p>
     </div>
-    <NuxtImg w-8 h-8 src="/img/main/basket-shopping.svg" />
+    <NuxtImg w-8 h-8 src="/main/basket-shopping.svg" />
   </div>
 </template>

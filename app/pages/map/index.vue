@@ -13,7 +13,7 @@ definePageMeta({
     mb-2
     flex
     flex-col
-    gap-8
+    gap-6
     items-center
   >
     <div flex flex-col gap-4>
@@ -30,12 +30,12 @@ definePageMeta({
           flex-wrap
           justify-center
         >
-          <MapCardColor :value="45" src-img="/img/main/color-red.svg" />
-          <MapCardColor :value="45" src-img="/img/main/color-green.svg" />
-          <MapCardColor :value="45" src-img="/img/main/color-purple.svg" />
-          <MapCardColor :value="45" src-img="/img/main/color-blue.svg" />
-          <MapCardColor :value="45" src-img="/img/main/color-white.svg" />
-          <MapCardColor :value="45" src-img="/img/main/color-yellow.svg" />
+          <MapCardColor :value="45" src-img="/main/color-red.svg" />
+          <MapCardColor :value="45" src-img="/main/color-green.svg" />
+          <MapCardColor :value="45" src-img="/main/color-purple.svg" />
+          <MapCardColor :value="45" src-img="/main/color-blue.svg" />
+          <MapCardColor :value="45" src-img="/main/color-white.svg" />
+          <MapCardColor :value="45" src-img="/main/color-yellow.svg" />
         </div>
       </div>
 
@@ -54,9 +54,9 @@ definePageMeta({
           flex-wrap
           justify-center
         >
-          <MapState title="№3" src-img="/img/main/trophy.svg" />
-          <MapState title="145%" src-img="/img/main/chart-line.svg" />
-          <MapState title="+150" src-img="/img/main/dollar.svg" />
+          <MapState title="№3" src-img="/main/trophy.svg" />
+          <MapState title="145%" src-img="/main/chart-line.svg" />
+          <MapState title="+150" src-img="/main/dollar.svg" />
         </div>
       </div>
     </div>
@@ -70,12 +70,12 @@ definePageMeta({
       p-3
       w-70
       rounded-2xl
-      m-4
+      m-5
     >
       <p text-xl text-center>
         Атаковать <span text-brandYellow>желтый</span> цвет
       </p>
-      <NuxtImg w-40 h-40 src="/img/main/knife.svg" />
+      <NuxtImg w-40 h-40 src="/main/knife.svg" />
     </div>
   </div>
 </template>

@@ -28,17 +28,13 @@ definePageMeta({
 
       <div flex flex-wrap justify-center gap-5>
         <AccountState
-          src-img="/img/main/trophy.svg"
+          src-img="/main/trophy.svg"
           value="37%"
           title="Max взятых полей"
         />
+        <AccountState src-img="/main/dollar.svg" value="7500" title="Монет" />
         <AccountState
-          src-img="/img/main/dollar.svg"
-          value="7500"
-          title="Монет"
-        />
-        <AccountState
-          src-img="/img/main/crosshair.svg"
+          src-img="/main/crosshair.svg"
           value="3/4"
           title="Право атаки"
         />
@@ -49,17 +45,17 @@ definePageMeta({
 
     <div bg-brand rounded-5 p-4 flex flex-col gap-3 justify-end items-end>
       <MainButton
-        src-img="/img/main/loader.svg"
+        src-img="/main/loader.svg"
         title-button="Выйти из профиля"
         link="/auth"
       />
       <MainButton
-        src-img="/img/main/sensor-triangle.svg"
+        src-img="/main/sensor-triangle.svg"
         title-button="Сообщить о проблеме"
         link="/shop"
       />
       <MainButton
-        src-img="/img/main/refresh.svg"
+        src-img="/main/refresh.svg"
         title-button="Обновить данные"
         link="/acc"
       />

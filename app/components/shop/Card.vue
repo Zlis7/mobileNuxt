@@ -26,10 +26,10 @@ const props = defineProps({
     </p>
     <div flex justify-between gap-3 items-center w-full>
       <div flex gap-2 items-center>
-        <NuxtImg w-7 h-7 src="/img/main/badge-dollar.svg" />
+        <NuxtImg w-7 h-7 src="/main/badge-dollar.svg" />
         <p>{{ props.price }}</p>
       </div>
-      <NuxtImg w-10 h-10 src="/img/main/check-access.svg" />
+      <NuxtImg w-10 h-10 src="/main/check-access.svg" />
     </div>
   </div>
 </template>

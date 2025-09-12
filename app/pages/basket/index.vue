@@ -16,7 +16,16 @@ definePageMeta({
     mb-2
   >
     <div bg-brand rounded-5 p-5>
-      <div flex flex-col gap-5 items-center wrap-normal overflow-x-scroll h-169>
+      <div
+        flex
+        flex-col
+        gap-5
+        items-center
+        wrap-normal
+        overflow-x-scroll
+        scrollbar-none
+        h-169
+      >
         <BasketCard
           price="7800"
           title=" УУием ение макси ение максиммакс маение максиммаксмаммаксмас прав макси макси макси макси атимальных прав атакиальных"

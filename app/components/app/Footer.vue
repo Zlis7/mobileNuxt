@@ -9,8 +9,8 @@ const isActive = (paths: string[]) => paths.includes(route.path)
       <FooterButton
         :src-img="
           isActive(['/shop', '/basket'])
-            ? '/img/footer/moneybag-special.svg'
-            : '/img/footer/moneybag.svg'
+            ? '/footer/moneybag-special.svg'
+            : '/footer/moneybag.svg'
         "
         :color-title="
           isActive(['/shop', '/basket'])
@@ -23,8 +23,8 @@ const isActive = (paths: string[]) => paths.includes(route.path)
       <FooterButton
         :src-img="
           isActive(['/map'])
-            ? '/img/footer/globe-special.svg'
-            : '/img/footer/globe.svg'
+            ? '/footer/globe-special.svg'
+            : '/footer/globe.svg'
         "
         :color-title="
           isActive(['/map']) ? 'text-brand-special' : 'text-brandWhite'
@@ -35,8 +35,8 @@ const isActive = (paths: string[]) => paths.includes(route.path)
       <FooterButton
         :src-img="
           isActive(['/acc'])
-            ? '/img/footer/user-special.svg'
-            : '/img/footer/user.svg'
+            ? '/footer/user-special.svg'
+            : '/footer/user.svg'
         "
         :color-title="
           isActive(['/acc']) ? 'text-brand-special' : 'text-brandWhite'

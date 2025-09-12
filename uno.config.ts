@@ -1,7 +1,8 @@
 import { defineConfig, presetAttributify, presetWind4 } from 'unocss'
+import { presetScrollbar } from 'unocss-preset-scrollbar'
 
 export default defineConfig({
-  presets: [presetWind4(), presetAttributify()],
+  presets: [presetWind4(), presetAttributify(), presetScrollbar()],
   theme: {
     colors: {
       brand: {
@@ -16,7 +17,6 @@ export default defineConfig({
       brandGreen: '#00FF12',
       brandPurple: '#E200FF',
       brandGray: '#C4C4C4',
-
     },
   },
 })
